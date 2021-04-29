@@ -25,6 +25,9 @@ Route::get('/fiche-produit', function () {
 Route::get('/contact', function () {
     return view('/pages/contact');
 });
+Route::get('/aaaaa', function () {
+    return view('/pages/contact');
+});
 
 Route::get('home', function () {
 return view('home');
