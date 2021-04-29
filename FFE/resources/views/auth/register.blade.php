@@ -3,11 +3,11 @@
 
 @section('content')
   <section class="Logincards">
-    <div data-aos="zoom-in" class="cards register">
+    <div class="cards register">
       <h2>Inscription</h2>
       <form method="POST" action="{{ route('register') }}">
         @csrf
-        
+
         <label class="hidden" for="name">{{ __('Name') }}</label>
         <input id="name" type="text" class="@error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nom">
         @error('name')

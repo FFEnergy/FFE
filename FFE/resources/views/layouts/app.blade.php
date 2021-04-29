@@ -31,7 +31,7 @@
     <div id="app">
         <nav>
             <div class="container">
-                <a aria-label="page d'acceuil" href="../index/" id="brand"><img src="images\wind.svg" alt=""><span>FFE, l'éolienne 100% recyclé</span></a>
+                <a aria-label="page d'acceuil" href="./" id="brand"><img src="images\wind.svg" alt=""><span>FFE, l'éolienne 100% recyclé</span></a>
                 <button class="burger">
                     <span class="rotate"></span>
                     <span class="rotate"></span>
@@ -43,12 +43,12 @@
                     <li><a href="../contact/contact.html">Contactez-nous</a></li>
                     <li><a href="../Fiche-Produit/fiche-produit.html">Acheter</a></li>
                     @guest
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <li class="">
+                            <a class="" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         @if (Route::has('register'))
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <li class="">
+                                <a class="" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
                     @else
@@ -94,7 +94,3 @@
     <script src="JS/script.js" charset="utf-8"></script>
 </body>
 </html>
-
-
-
-
