@@ -12,14 +12,16 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/CSS/login-style.css">
-        <!-- Style page index -->
-        <link rel="stylesheet" href="./css/CSS/index-style.css">
-        <!-- Style page fiche-produit -->
-        <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
-        <!-- Style page contact -->
-        <link rel="stylesheet" href="./css/CSS/contact-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+      {{-- login/register --}}
+      <link rel="stylesheet" href="./css/CSS/login-style.css">
+      {{-- header --}}
+      <link rel="stylesheet" href="./css/CSS/header.css">
+      <!-- Style page index -->
+      <link rel="stylesheet" href="./css/CSS/index-style.css">
+      <!-- Style page fiche-produit -->
+      <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
+      <!-- Style page contact -->
+      <link rel="stylesheet" href="./css/CSS/contact-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -38,7 +40,7 @@
                     <span class="rotate"></span>
                 </button>
                 <ul class="navbar-menu">
-                    <li><a href="../index/">Home</a></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="../AboutUs/AboutUs.html">About</a></li>
                     <li><a href="../contact/contact.html">Contactez-nous</a></li>
                     <li><a href="../Fiche-Produit/fiche-produit.html">Acheter</a></li>
@@ -52,8 +54,8 @@
                             </li>
                         @endif
                     @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <li class="dropdown">
+                            <a id="navbarDropdown" class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -76,6 +78,8 @@
         <main>
             @yield('content')
         </main>
+
+
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><br />
@@ -90,7 +94,9 @@
     <script src="https://kit.fontawesome.com/5703a1c6f6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!-- navbar -->
-
-    <script src="JS/script.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
+    {{-- <script src="JS/script.js" charset="utf-8"></script> --}}
 </body>
 </html>

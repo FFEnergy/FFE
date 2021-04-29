@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::get('/index', function () {
     return view('/pages/index');
 });
+
 Route::get('/fiche-produit', function () {
     return view('/pages/fiche-produit');
 });
