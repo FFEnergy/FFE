@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
         <!-- Style page contact -->
         <link rel="stylesheet" href="./css/CSS/contact-style.css">
+        <!-- Style page About Us -->
+        <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -78,7 +80,7 @@
         </main>
     </div>
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><br />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -90,7 +92,16 @@
     <script src="https://kit.fontawesome.com/5703a1c6f6.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!-- navbar -->
-
     <script src="JS/script.js" charset="utf-8"></script>
+    <!-- script AboutUs -->
+    <script src="./JS/AboutUs.js"></script>
+    <!-- script contact -->
+    <script src="./JS/contact.js"></script>
+    <!-- script Fiche produit -->
+    <script src="./JS/fiche-produit.js"></script>
+    <!-- script index -->
+    <script src="./JS/index.js"></script>
+    <!-- script index -->
+    <script src="./JS/login.js"></script>
 </body>
 </html>
