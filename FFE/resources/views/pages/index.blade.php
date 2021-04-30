@@ -4,9 +4,9 @@
     <section class="index">
         <h1 class="t1">FFEnergy</h1>
         <section class="nuages">
-            <img class="nuage" src="images\nuage1.svg" alt="">
-            <img class="nuage" src="images\nuage2.svg" alt="">
-            <img class="nuage" src="images\nuage3.svg" alt="">
+            <img class="nuage" src="./images/nuage1.svg" alt="">
+            <img class="nuage" src="./images/nuage2.svg" alt="">
+            <img class="nuage" src="./images/nuage3.svg" alt="">
         </section>
         <section class="Eolienne animationtropstyle">
             <img src="images\wind.svg" alt="">

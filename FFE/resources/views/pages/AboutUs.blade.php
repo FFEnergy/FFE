@@ -2,9 +2,9 @@
 
 @section('content')
 <section class="nuages">
-<img class="nuage" src="..\index\images\nuage1.svg" alt="">
-<img class="nuage" src="..\index\images\nuage2.svg" alt="">
-<img class="nuage" src="..\index\images\nuage3.svg" alt="">
+<img class="nuage" src=".\images\nuage1.svg" alt="">
+<img class="nuage" src=".\images\nuage2.svg" alt="">
+<img class="nuage" src=".\images\nuage3.svg" alt="">
 </section>
 <section class="panel miseEnPlace">
   <div class="text">
@@ -38,12 +38,12 @@
 
 <div class="team">
   <div data-aos="fade-up" data-aos-delay="500" class="people">
-    <img alt="photo de Florent" id="Florent" src="../../../../../../../Users/fdupin/Desktop/FFE/FFE-maquettes/AboutUs/Image/Florent%20Martinez.JPG">
+    <img alt="photo de Florent" id="Florent" src="./images/Florent Martinez.JPG">
     <h3>Florent</h3>
   </div>
   <div data-aos="fade-up" data-aos-delay="1000" class="people">
     <h3>Florian</h3>
-    <img alt="photo de Florian" id="Florian" src="../../../../../../../Users/fdupin/Desktop/FFE/FFE-maquettes/AboutUs/Image/Florian%20Dupin.JPG">
+    <img alt="photo de Florian" id="Florian" src="./images/Florian Dupin.JPG">
   </div>
 </div>
 
