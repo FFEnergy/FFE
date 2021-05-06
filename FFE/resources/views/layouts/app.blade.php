@@ -12,14 +12,16 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-      {{-- login/register --}}
-      <link rel="stylesheet" href="./css/CSS/login-style.css">
-      {{-- header --}}
-      <link rel="stylesheet" href="./css/CSS/header.css">
-      <!-- Style page index -->
-      <link rel="stylesheet" href="./css/CSS/index-style.css">
-      <!-- Style page fiche-produit -->
-      <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
+        {{-- login/register --}}
+        <link rel="stylesheet" href="./css/CSS/login-style.css">
+        {{-- header --}}
+        <link rel="stylesheet" href="./css/CSS/header.css">
+        <!-- Style page index -->
+        <link rel="stylesheet" href="./css/CSS/index-style.css">
+        <!-- Style page fiche-produit -->
+        <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
+        <!-- Style page AboutUs -->
+        <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
       <!-- Style page contact -->
       <link rel="stylesheet" href="./css/CSS/contact-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
