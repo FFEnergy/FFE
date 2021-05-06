@@ -22,7 +22,7 @@
       <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
       <!-- Style page contact -->
       <link rel="stylesheet" href="./css/CSS/contact-style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- FontAwesome -->
@@ -97,6 +97,6 @@
     <script type="text/javascript">
       AOS.init();
     </script>
-    {{-- <script src="JS/script.js" charset="utf-8"></script> --}}
+    <script src="JS/index.js" charset="utf-8"></script>
 </body>
 </html>
