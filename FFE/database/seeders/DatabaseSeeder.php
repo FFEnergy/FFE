@@ -20,32 +20,31 @@ class DatabaseSeeder extends Seeder
           "class_content" => "Windy",
           "page_id" => 'index',
           "content" =>
-              'Windy est une éolienne faite à 100% d\'objet recyclé. Cette Éolienne a pour
-              but d\'aider les personnes n\'ayant pas accès couramment à l\'électricité.
-              Vous pouvez si vous avez les moyens acheter celle-ci pour nous aider à en faire plus.',
+              'Windy est une éolienne faite à 100% d\'objet recyclé. Celle ci a pour
+              but d\'aider les personnes n\'ayant pas accès couramment à l\'électricité.',
           "titre_content" => 'Windy',
         ],
         [
           "class_content" => 'Pourquoi',
           "page_id" => 'index',
           "content" =>
-                        'Malheureusement aujourd’hui environ 15% de la population mondiale n’a
-                        pas accès à l\'électricité, mais des personnes en ont besoin pour par
-                        exemple avoir un peu de lumière à la nuit tomber et pouvoir étudier.
-                        ;
-                        Mais le réel besoin des habitant d\'après un échanges menées par
-                        electriciens sans frontières avec la population locale était non
-                        pas que chaque habitant est de l\'électricité mais qu’il priorise l’alimentation du
-                        dispensaire et de l\'école',
-          "titre_content" => 'Pourquoi ce projet ? ; Une situation dans le besoin',
+                        'L\'Afrique subsaharienne, comptant plus de 950 millions d\'habitants,
+                        est la région la plus pauvre en électricité au monde. Plus de 600 millions
+                        de personnes n\'ont pas accès à l\'électricité et des millions d\'autres
+                        sont connectées à un réseau non fiable qui ne répond pas à leurs besoins
+                        quotidiens en énergie. Les pays de cette région ont un taux d\'accès à
+                        l\'électricité d\'environ 20% et deux personnes sur trois n\'ont pas accès
+                        aux services énergétiques modernes.',
+          "titre_content" => 'Pourquoi ce projet ? </br> Une situation dans le besoin',
         ],
         [
           "class_content" => 'Moyen',
           "page_id" => 'index',
-          "content" => 'Alors pour réunir notre projet et faire une bonne action de notre côté
-                        nous avons décidé de créer un site web qui permettrait de vendre des éoliennes
-                        créer par nos soin et les vendre pour en construire d’avantages puis en envoyer
-                        au personnes qui n’ont pas acces a l\'electricite',
+          "content" => 'Pour aider les personnes en manque d\'électricité nous avons créé cette
+                        éolienne et ce site web. Il nous permet de partager notre action pour que
+                        vous aussi puissiez aider soit en nous faisant un don ou en achetant une
+                        éolienne pour vous. Cet argent servira à la création et à l\'envoi de cette éolienne. 
+                        Vous pouvez aussi creer votre éolienne maison que nous nous chargeront d\'envoyer dans des zones à besoins.',
           "titre_content" => 'Des moyens mis en place',
         ],
         [
