@@ -211,6 +211,9 @@ section.index {
         -o-background-size: cover;
         background-size: cover;
     background-attachment: fixed;
+    h2{
+      line-height: 2;
+    }
     .text {
       height: 100vh;
       display: flex;
@@ -219,7 +222,7 @@ section.index {
       padding: 40px 0 40px 0;
       margin-top: 200px;
       .paragraphe{
-        width: 50%;
+        width: 70%;
         min-width: 492px;
         display: flex;
         align-items: center;
@@ -232,42 +235,42 @@ section.index {
         display: flex;
       }
 
+      // .paragraphe:nth-child(1){
+      //   background-color: $secondary-color;
+      //   display: flex;
+      //   flex-direction: column;
+      //   border-top-right-radius: 20px;
+      //   border-bottom-right-radius: 20px;
+      //   img{
+      //     width: 150px;
+      //     height: 150px;
+      //   }
+      //
+      //
+      //   img:nth-child(1) {
+      //     margin-top: -10%;
+      //     margin-left: -40%;
+      //   }
+      //
+      //   img:nth-child(2) {
+      //     margin-top: 5%;
+      //     margin-left: 45%;
+      //   }
+      //
+      //   img:nth-child(3) {
+      //     margin-left: 0;
+      //   }
+      //
+      //   p{
+      //     color: white;
+      //   }
+      // }
+
       .paragraphe:nth-child(1){
-        background-color: $secondary-color;
-        display: flex;
-        flex-direction: column;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        img{
-          width: 150px;
-          height: 150px;
-        }
-
-
-        img:nth-child(1) {
-          margin-top: -10%;
-          margin-left: -40%;
-        }
-
-        img:nth-child(2) {
-          margin-top: 5%;
-          margin-left: 45%;
-        }
-
-        img:nth-child(3) {
-          margin-left: 0;
-        }
-
-        p{
-          color: white;
-        }
-      }
-
-      .paragraphe:nth-child(2){
         background-color: white;
         display: flex;
         flex-direction: column;
-
+        text-align: center;
         img{
           width: 70px;
           height: 100px;
@@ -404,7 +407,7 @@ section.index {
   section.Dessin {
     display: flex;
     height: 600px;
-    margin-top: 600px;
+    margin-top: 750px;
 
     .plaine-petit {
       display: flex;
@@ -438,7 +441,7 @@ section.index {
       width: 1100px;
       min-width: 80%;
       height: 700px;
-      border-radius: 50% 50% 0 0;
+      border-radius: 50% 0% 0 0;
       background-color: #00D957;
       right: 0%;
 

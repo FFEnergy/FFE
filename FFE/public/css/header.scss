@@ -18,7 +18,7 @@ nav {
   width: 100%;
   z-index: 9998;
   transition: all 0.5s;
-
+  height: 80px;
   a {
     display: inline-block;
     color: $secondary-color;
@@ -144,6 +144,10 @@ nav {
 
 @media (max-width: 750px) {
   nav{
+    line-height: 50px;
+    ul{
+      border: 2px solid $secondary-color;
+    }
     a{
       span{
         margin-left: -10px !important;

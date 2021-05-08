@@ -14,18 +14,18 @@
         </section>
         <section class="Windy">
             <div class="text">
-
+              @php
+                // dd($content);
+              @endphp
                 <div class="oiseaux">
                     <img data-aos="fade-up-left" data-aos-anchor-placement="top-center" class="oiseau" src="images\oiseau.png" alt="">
                     <img data-aos="fade-right" data-aos-anchor-placement="top-center" class="oiseau" src="images\oiseau.png" alt="">
                     <img data-aos="fade-down-right" data-aos-anchor-placement="top-center" class="oiseau" src="images\oiseau.png" alt="">
                 </div>
                 <div class="paragraphe">
-                    <h3>Windy</h3>
+                    <h3>@php echo $content[0]['titre_content']; @endphp</h3>
                     <p>
-                        Windy est une éolienne faite à 100% d'objet recyclé. Cette Éolienne a pour
-                        but d'aider les personnes n'ayant pas accès couramment à l'électricité.
-                        Vous pouvez si vous avez les moyens acheter celle-ci pour nous aider à en faire plus.
+                      @php echo $content[0]['content']; @endphp
                     </p>
                     <div id="trigerBird" class="boutons-eolienne">
                         <button type="button" name="EnSavoirPlus" class="bouton-primaire">En savoir plus</button>
@@ -36,31 +36,25 @@
 
         </section>
         <section class="Pourquoi">
-            <h2 id="triggerBullPourquoi">Pourquoi ce projet ?</h2>
-            <h2>Une situation dans le besoin</h2>
+            <h2>@php echo $content[1]['titre_content']; @endphp</h2>
             <div class="text">
-                <div data-aos="fade-right" data-aos-anchor-placement="top-center" class="paragraphe">
+                {{-- <div data-aos="fade-right" data-aos-anchor-placement="top-center" class="paragraphe">
                     <div class="img">
                         <img class="nuageTxt" src="images\nuage3.svg" alt="">
                         <img class="nuageTxt" src="images\nuage2.svg" alt="">
                     </div>
                     <p>
-                        Malheureusement aujourd’hui environ 15% de la population mondiale n’a
-                        pas accès à l'électricité, mais des personnes en ont besoin pour par
-                        exemple avoir un peu de lumière à la nuit tomber et pouvoir étudier.
+                      @php echo $content[1]['content']; @endphp
                     </p>
                     <div class="img">
                         <img class="nuageTxt" src="images\nuage1.svg" alt="">
                     </div>
-                </div>
+                </div> --}}
                 <div class="paragraphe">
                     <div class="img">
                     </div>
                     <p>
-                        Mais le réel besoin des habitant d'après un échanges menées par
-                        electriciens sans frontières avec la population locale était non
-                        pas que chaque habitant est de l'électricité mais qu’il priorise l’alimentation du
-                        dispensaire et de l'école
+                      @php echo $content[1]['content']; @endphp
                     </p>
                     <div class="img">
                     </div>
@@ -75,10 +69,7 @@
                     <div class="img">
                     </div>
                     <p>
-                        Alors pour réunir notre projet et faire une bonne action de notre côté
-                        nous avons décidé de créer un site web qui permettrait de vendre des éoliennes
-                        créer par nos soin et les vendre pour en construire d’avantages puis en envoyer
-                        au personnes qui n’ont pas acces a l'electricite
+                      @php echo $content[2]['content']; @endphp
                     </p>
                     <div class="img">
                     </div>

@@ -6,8 +6,8 @@
     <section class="desc">
         <img data-aos="fade-right" alt="image de l'éolienne" src="./Images/eolienne5.jpg">
         <div class="txt">
-            <h2>Windy</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2>@php echo $content[4]['titre_content']; @endphp</h2>
+            <p>@php echo $content[4]['content']; @endphp</p>
         </div>
     </section>
     <section class="nbr">
@@ -36,4 +36,3 @@
 
 </section>
 @endsection
-
