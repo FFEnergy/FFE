@@ -22,6 +22,9 @@
       <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
       <!-- Style page contact -->
       <link rel="stylesheet" href="./css/CSS/contact-style.css">
+
+      <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -41,9 +44,9 @@
                 </button>
                 <ul class="navbar-menu">
                     <li><a href="./">Home</a></li>
-                    <li><a href="../AboutUs/AboutUs.html">About</a></li>
-                    <li><a href="../contact/contact.html">Contactez-nous</a></li>
-                    <li><a href="../Fiche-Produit/fiche-produit.html">Acheter</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li><a href="./contact">Contactez-nous</a></li>
+                    <li><a href="./fiche-produit">Acheter</a></li>
                     @guest
                         <li class="">
                             <a class="" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -98,5 +101,7 @@
       AOS.init();
     </script>
     <script src="JS/index.js" charset="utf-8"></script>
+    <script src="JS/AboutUs.js" charset="utf-8"></script>
+    <script src="JS/contact.js" charset="utf-8"></script>
 </body>
 </html>

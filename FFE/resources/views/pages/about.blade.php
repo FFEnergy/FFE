@@ -1,27 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="nuages">
-<img class="nuage" src=".\images\nuage1.svg" alt="">
-<img class="nuage" src=".\images\nuage2.svg" alt="">
-<img class="nuage" src=".\images\nuage3.svg" alt="">
-</section>
 <section class="panel miseEnPlace">
   <div class="text">
     <div class="paragraphe">
-      <h3>FFE</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas nec
-        ipsum dignissim commodo. Pellentesque lacinia sagittis sapien at consectetur.
-        Maecenas at egestas urna. Vestibulum bibendum ultricies ex, id consectetur
-        libero pharetra in. Proin molestie sem
-      </p>
-      <p>
-        Duis feugiat in purus et mattis. Proin nisl risus, eleifend sit amet nisl eu,
-        tincidunt tristique lorem. Nam leo nibh, viverra ut consectetur fringilla
-        , dictum eget diam. Phasellus enim quam, semper in viverra porttitor,
-        semper quis leo. Integer et ultricies libero. Duis a turpis id lectus facilisis interdum.
-      </p>
+      <h3>@php echo $content[3]['titre_content']; @endphp</h3>
+      <p>@php echo $content[3]['content']; @endphp</p>
 
     </div>
   </div>
@@ -50,4 +34,3 @@
 
 </section>
 @endsection
-

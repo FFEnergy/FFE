@@ -1,27 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{ IndexController};
+use App\Http\Controllers\{ IndexController, AboutController, ContactController, BuyController};
 
-// Route::get('/', function () {
-//     return view('/pages/index');
-// });
+
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/fiche-produit', [BuyController::class, 'index'])->name('buy');
 
-// Route::get('/index', function () {
-//     return view('/pages/index');
-// });
 
-Route::get('/fiche-produit', function () {
-    return view('/pages/fiche-produit');
-});
-Route::get('/contact', function () {
-    return view('/pages/contact');
-});
-Route::get('/AboutUs', function () {
-    return view('/pages/AboutUs');
-});
 
 Route::get('home', function () {
 return view('home');
