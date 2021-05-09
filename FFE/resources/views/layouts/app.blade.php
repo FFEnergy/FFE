@@ -12,19 +12,13 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-        {{-- login/register --}}
-        <link rel="stylesheet" href="./css/CSS/login-style.css">
-        {{-- header --}}
-        <link rel="stylesheet" href="./css/CSS/header.css">
-        <!-- Style page index -->
-        <link rel="stylesheet" href="./css/CSS/index-style.css">
-        <!-- Style page fiche-produit -->
-        <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
-        <!-- Style page AboutUs -->
-        <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
-      <!-- Style page contact -->
+      <link rel="stylesheet" href="./css/CSS/login-style.css">
+      <link rel="stylesheet" href="./css/CSS/compte-style.css">
+      <link rel="stylesheet" href="./css/CSS/header.css">
+      <link rel="stylesheet" href="./css/CSS/index-style.css">
+      <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
+      <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
       <link rel="stylesheet" href="./css/CSS/contact-style.css">
-
       <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
@@ -59,11 +53,12 @@
                             </li>
                         @endif
                     @else
-                        <li class="dropdown">
-                            <a id="navbarDropdown" class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <li>
+                            <a href="./compte">
                                 {{ Auth::user()->name }}
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        </li>
+                            {{-- <div class="" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -72,8 +67,7 @@
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
-                            </div>
-                        </li>
+                            </div> --}}
                     @endguest
                 </ul>
             </div>
@@ -105,5 +99,6 @@
     <script src="JS/index.js" charset="utf-8"></script>
     <script src="JS/AboutUs.js" charset="utf-8"></script>
     <script src="JS/contact.js" charset="utf-8"></script>
+    <script src="JS/compte.js" charset="utf-8"></script>
 </body>
 </html>

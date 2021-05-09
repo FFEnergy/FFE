@@ -1,11 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
-
-$h1font-color: #FFFFFF;
-$pfont-color: #FFFFFF;
-$h2font-color: #e6f5ff;
-$secondary-color: #60AAFF;
+@import 'colors';
+@import 'fonts';
+@import 'general';
 
 body {
   margin: 0;

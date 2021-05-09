@@ -3,7 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\{ Contents };
+use App\Models\{ Contents , User};
+use Illuminate\Support\Str;
 
 
 class DatabaseSeeder extends Seeder
@@ -43,7 +44,7 @@ class DatabaseSeeder extends Seeder
           "content" => 'Pour aider les personnes en manque d\'électricité nous avons créé cette
                         éolienne et ce site web. Il nous permet de partager notre action pour que
                         vous aussi puissiez aider soit en nous faisant un don ou en achetant une
-                        éolienne pour vous. Cet argent servira à la création et à l\'envoi de cette éolienne. 
+                        éolienne pour vous. Cet argent servira à la création et à l\'envoi de cette éolienne.
                         Vous pouvez aussi creer votre éolienne maison que nous nous chargeront d\'envoyer dans des zones à besoins.',
           "titre_content" => 'Des moyens mis en place',
         ],
@@ -87,5 +88,13 @@ class DatabaseSeeder extends Seeder
           'titre_content' => $section['titre_content'],
         ]);
       }
+      User::create([
+        'name' => 'florent',
+        'email' => 'fmartinez@edenschool.fr',
+        'email_verified_at' => now(),
+        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', //password
+        'is_admin' => '1',
+        'remember_token' => Str::random(10),
+      ]);
     }
 }
