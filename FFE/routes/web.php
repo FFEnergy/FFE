@@ -12,3 +12,4 @@ Route::get('/fiche-produit', [BuyController::class, 'index'])->name('buy');
 Route::get('/compte', [UserController::class, 'index'])->name('compte');
 
 Route::post('updateUser', [UserController::class, 'update'])->name('user.update')->middleware('auth');
+Route::post('contact', [ContactController::class, 'contact'])->name('contact.contact');
