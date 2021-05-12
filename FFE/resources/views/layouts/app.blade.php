@@ -12,14 +12,15 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-      <link rel="stylesheet" href="./css/CSS/login-style.css">
-      <link rel="stylesheet" href="./css/CSS/compte-style.css">
-      <link rel="stylesheet" href="./css/CSS/header.css">
-      <link rel="stylesheet" href="./css/CSS/index-style.css">
-      <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
-      <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
-      <link rel="stylesheet" href="./css/CSS/contact-style.css">
-      <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+        <link rel="stylesheet" href="./css/CSS/login-style.css">
+        <link rel="stylesheet" href="./css/CSS/compte-style.css">
+        <link rel="stylesheet" href="./css/CSS/header.css">
+        <link rel="stylesheet" href="./css/CSS/index-style.css">
+        <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
+        <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+        <link rel="stylesheet" href="./css/CSS/contact-style.css">
+        <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+        <link rel="stylesheet" href="./css/CSS/modification-style.css">
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -58,6 +59,11 @@
                                 {{ Auth::user()->name }}
                             </a>
                         </li>
+                    @if(Auth::user()->is_admin == 1)
+                        <li>
+                            <a href="./modification"><i class="far fa-edit"></i></a>
+                        </li>
+                    @endif
                             {{-- <div class="" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
@@ -76,6 +82,10 @@
 
         <main>
             @yield('content')
+
+            @if('modificat')
+                @yield('modificat')
+            @endif
         </main>
 
 
@@ -100,5 +110,6 @@
     <script src="JS/AboutUs.js" charset="utf-8"></script>
     <script src="JS/contact.js" charset="utf-8"></script>
     <script src="JS/compte.js" charset="utf-8"></script>
+    <script src="JS/modification.js" charset="utf-8"></script>
 </body>
 </html>

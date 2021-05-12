@@ -13,10 +13,16 @@ class CreateContentsTable extends Migration
      */
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('contents', function (Blueprint $table) {
             $table->id();
             $table->string('class_content');
-            $table->string('page_id');
+            $table->unsignedBigInteger('pages_id');
+            $table->foreign('pages_id')
+                ->references('id')
+                ->on('pages')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
             $table->longText('content');
             $table->string('titre_content');
             $table->timestamps();

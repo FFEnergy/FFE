@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contents extends Model
+class Pages extends Model
 {
     use HasFactory;
 
@@ -16,15 +16,10 @@ class Contents extends Model
      */
     protected $fillable = [
         'id',
-        'class_contents',
-        'page_id',
-        'content',
-        'titre_content',
-        'created_at',
-        'updated_at',
+        'libelle_page',
     ];
 
-    public function pages() {
-        return $this->belongsTo(Pages::class);
+    public function contents() {
+        return $this->hasMany(Contents::class);
     }
 }
