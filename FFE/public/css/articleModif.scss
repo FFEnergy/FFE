@@ -1,3 +1,39 @@
+@import 'colors';
+@import 'fonts';
+@import 'general';
+
+body {
+  margin: 0;
+  #app{
+    display: flex;
+
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+aside{
+  padding: 5px;
+  min-width: 250px;
+  .menu-label{
+    a{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100px;
+      }
+    }
+  }
+  .menu-list{
+    .is-active{
+      background-color: $secondary-color;
+    }
+  }
+}
 .accordion {
     background-color: #eee;
     color: #444;

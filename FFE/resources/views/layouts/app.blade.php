@@ -82,10 +82,6 @@
 
         <main>
             @yield('content')
-
-            @if('modificat')
-                @yield('modificat')
-            @endif
         </main>
 
 

@@ -11,6 +11,6 @@ class ContentController extends Controller
     public function index()
     {
         $content = Contents::with("pages")->get();
-        return view('pages.test', compact('content'));
+        return view('admin.articleModif', compact('content'));
     }
 }
