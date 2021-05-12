@@ -57,8 +57,11 @@ p {
   z-index: 1;
 }
 
-section.miseEnPlace{
+.scrollmagic-pin-spacer{
+  overflow-y: hidden !important;
+}
 
+section.miseEnPlace{
   width: 100%;
   display: flex;
   flex-direction: column;
