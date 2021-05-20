@@ -13,3 +13,4 @@ Route::get('/compte', [UserController::class, 'index'])->name('compte');
 Route::get('/modification', [ContentController::class, 'index'])->name('modification');
 
 Route::post('updateUser', [UserController::class, 'update'])->name('user.update')->middleware('auth');
+Route::post('requeteModifier', [ContentController::class, 'update'])->name('modif');

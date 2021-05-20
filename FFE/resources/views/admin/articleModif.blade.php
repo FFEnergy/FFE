@@ -7,11 +7,14 @@
 
         <button class="accordion"><b>Bloc :</b> <?= $contenue->class_content ?>, <b>sur la page :</b>  {{$contenue->pages->libelle_pages}} </button>
         <div class="panel">
-            <form>
+            <form method="POST" action="/requeteModifier">
+                @csrf
                 <h2>Titre</h2>
-                <textarea class="editor form-control" name="titre-editor{{$contenue->id}}">{{$contenue->titre_content}}</textarea>
+                <input type="hidden" name="id" value="{{$contenue->id}}">
+                <textarea class="editor form-control" name="titre_content">{{$contenue->titre_content}}</textarea>
                 <h2>Descritption</h2>
-                <textarea class="editor form-control" name="articles-editor{{$contenue->id}}">{{$contenue->content}}</textarea>
+                <textarea class="editor form-control" name="content">{{$contenue->content}}</textarea>
+                <button type="submit">Modifier</button>
             </form>
         </div>
 
