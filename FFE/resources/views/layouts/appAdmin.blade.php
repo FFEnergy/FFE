@@ -30,34 +30,14 @@
         <p class="menu-label">
           <a aria-label="page d'acceuil" href="./" id="brand"><img src="images\wind.svg" alt=""></a>
         </p>
-        <ul class="menu-list">
-          <li><a>Dashboard</a></li>
-          <li><a>Customers</a></li>
-        </ul>
         <p class="menu-label">
           Administration
         </p>
         <ul class="menu-list">
-          <li><a>Team Settings</a></li>
           <li>
             <a class="is-active">Modification des articles</a>
-            <ul>
-              <li><a>Members</a></li>
-              <li><a>Plugins</a></li>
-              <li><a>Add a member</a></li>
-            </ul>
           </li>
-          <li><a>Invitations</a></li>
-          <li><a>Cloud Storage Environment Settings</a></li>
-          <li><a>Authentication</a></li>
-        </ul>
-        <p class="menu-label">
-          Transactions
-        </p>
-        <ul class="menu-list">
-          <li><a>Payments</a></li>
-          <li><a>Transfers</a></li>
-          <li><a>Balance</a></li>
+          <li><a>Modification du contenu</a></li>
         </ul>
       </aside>
 
