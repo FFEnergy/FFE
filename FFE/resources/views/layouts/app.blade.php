@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="./css/CSS/contact-style.css">
         <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
         <link rel="stylesheet" href="./css/CSS/modification-style.css">
-
+        <link rel="stylesheet" href="./css/CSS/footer-style.css">
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -84,7 +84,35 @@
             @yield('content')
         </main>
 
-
+        <footer>
+            <div>
+                <img id="logoFFEnergyFooter" src=".\Images\wind.svg">
+                <p></p>
+            </div>
+            <div class="barreBlancheFooter"></div>
+            <div>
+                <ul class="divfooter1">
+                    <li>Se Connecter</li>
+                    <li>Créer Un Compte</li>
+                    <li>About</li>
+                    <li>Contactez-Nous</li>
+                    <li>Achetter</li>
+                </ul>
+            </div>
+            <div class="barreBlancheFooter"></div>
+            <div>
+                <ul class="divfooter2">
+                    <li>Politique De Confidentialité</li>
+                    <li>Media Kit</li>
+                    <li>Mention Légales</li>
+                    <li>Condition Générales De Vente</li>
+                </ul>
+            </div>
+            <div class="barreBlancheFooter"></div>
+            <div>
+                <img id="logoEdenSchoolFooter" src="./Images/EDEN_HORI_VERT-300x136.png">
+            </div>
+        </footer>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
