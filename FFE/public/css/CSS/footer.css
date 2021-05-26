@@ -51,27 +51,48 @@ p {
     border: 1px solid #FFFFFF;
     color: #FFFFFF; }
 
-main {
-  width: 100%;
-  padding: 30px; }
-
-#app {
+footer {
+  margin-top: 70px;
+  background-color: #FFF;
   display: flex;
-  width: 100%;
-  min-height: 100vh; }
-
-aside {
-  background-color: #121212;
-  padding: 25px;
-  min-width: 250px; }
-  aside .menu-label {
-    color: #60AAFF; }
-    aside .menu-label a {
-      display: flex;
-      flex-direction: column; }
-      aside .menu-label a img {
-        width: 100px; }
-  aside .menu-list a {
-    color: #fff; }
-  aside .menu-list .is-active {
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  footer .barreBlancheFooter {
+    height: 200px;
+    margin-top: 25px;
+    width: 3px;
+    border-radius: 3px;
     background-color: #60AAFF; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle; }
+    footer div #logoEdenSchoolFooter {
+      width: 250px;
+      height: 125px;
+      margin-top: 65px; }
+    footer div #logoFFEnergyFooter {
+      width: 200px;
+      height: 200px;
+      margin-top: 25px; }
+    footer div ul {
+      width: 200px; }
+      footer div ul li {
+        font-family: 'Roboto', sans-serif;
+        list-style-type: none;
+        padding-top: 25px;
+        color: #60AAFF; }
+        footer div ul li a {
+          text-decoration: none;
+          color: #60AAFF; }
+
+@media screen and (min-width: 0px) and (max-width: 960px) {
+  footer {
+    display: block;
+    width: 100%; }
+    footer .barreBlancheFooter {
+      height: 200px;
+      transform: rotate(90deg);
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto; } }

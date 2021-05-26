@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('style')
-    <link rel="stylesheet" href="./css/CSS/compte-style.css">
+    <link rel="stylesheet" href="./css/CSS/compte.css">
 @endsection
 
 @section('content')
@@ -10,6 +10,16 @@
     <div class="parametres">
       <ul>
         <li id="compte" class="section actif"><i class="fas fa-user"></i><span>Compte</span></li>
+        <li class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+          </form>
+        </li>
         {{-- <li id="order" class="section"><i class="fas fa-shopping-cart"></i><span>Commandes</span></li>
         <li id="comment" class="section"><i class="fas fa-comments"></i><span>Commentaires</span></li> --}}
       </ul>
@@ -35,12 +45,15 @@
             @enderror
           </div>
           <button class="bouton-primaire">Envoyer</button>
+
         </form>
+
         <div class="draw">
           <img id="wind" src="./Images/wind3.svg" alt="">
           <img id="bush" src="./Images/bush.svg" alt="">
         </div>
       </div>
+
     </section>
     {{-- <section class="main order">
       <h3>Last orders</h3>

@@ -18,6 +18,7 @@
         @yield('style')
         <!-- Feuilles de styles du header -->
         <link rel="stylesheet" href="./css/CSS/header.css">
+        <link rel="stylesheet" href="./css/CSS/footer.css">
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

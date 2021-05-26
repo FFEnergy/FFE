@@ -126,18 +126,21 @@ nav {
   transform: translate(0px, -7px) rotate(-45deg)!important;
 }
 @media (max-width: 1150px) {
-  nav ul.navbar-menu {
-    background-color: white;
-    width: 100%;
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
+  nav{
+    line-height: 50px;
+    ul.navbar-menu {
+      background-color: white;
+      border: 2px solid $secondary-color;
+      width: 100%;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
-
   nav button {
     display: block;
   }
@@ -145,15 +148,10 @@ nav {
 
 @media (max-width: 750px) {
   nav{
-    line-height: 50px;
-    ul{
-      border: 2px solid $secondary-color;
-    }
     a{
       span{
         margin-left: -10px !important;
         font-size: 10px;
-
       }
     }
   }

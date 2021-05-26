@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('style')
-    <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+    <link rel="stylesheet" href="./css/CSS/AboutUs.css">
 @endsection
 
 @section('content')
@@ -21,7 +21,7 @@
 
 
 <section class="SectionNotreEquipe">
-
+<h2>La team</h2>
 <div class="team">
   <div data-aos="fade-up" data-aos-delay="200" class="people">
     <img alt="photo de Florent" id="Florent" src="./images/Florent Martinez.JPG">

@@ -2,18 +2,15 @@
 @import 'fonts';
 @import 'general';
 
-body {
-  margin: 0;
-  #app{
-    display: flex;
-    min-height: 100vh;
-  }
+main{
+  width: 100%;
+  padding: 30px;
 }
 
-body,
-html {
-  overflow-x: hidden;
-  margin: 0;
+#app{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
 }
 
 

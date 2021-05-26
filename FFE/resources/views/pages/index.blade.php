@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('style')
-    <link rel="stylesheet" href="./css/CSS/index-style.css">
+    <link rel="stylesheet" href="./css/CSS/index.css">
 @endsection
 
 @section('content')
