@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Page d'acceuil, l'éolienne 100% recyclé">
-    <title>— FFEnergy —</title>
+    <title>FFEnergy</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images\wind3.svg">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
@@ -12,14 +14,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-      <link rel="stylesheet" href="./css/CSS/login-style.css">
-      <link rel="stylesheet" href="./css/CSS/compte-style.css">
-      <link rel="stylesheet" href="./css/CSS/header.css">
-      <link rel="stylesheet" href="./css/CSS/index-style.css">
-      <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
-      <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
-      <link rel="stylesheet" href="./css/CSS/contact-style.css">
-      <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+        <!-- Feuilles de styles des pages qui se genere automatiquement -->
+        @yield('style')
+        <!-- Feuilles de styles du header -->
+        <link rel="stylesheet" href="./css/CSS/header.css">
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

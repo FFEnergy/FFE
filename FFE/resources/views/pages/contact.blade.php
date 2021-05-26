@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('style')
+    <link rel="stylesheet" href="./css/CSS/contact-style.css">
+@endsection
+
 @section('content')
 
 <section class="contactForm">

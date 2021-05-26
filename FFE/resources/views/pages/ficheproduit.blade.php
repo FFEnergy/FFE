@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('style')
+    <link rel="stylesheet" href="./css/CSS/fiche-produit-style.css">
+@endsection
+
 @section('content')
 
 <section class="product">

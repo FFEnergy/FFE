@@ -3,37 +3,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Knewave&display=swap");
 body {
   background-color: #60AAFF;
-  margin: 0; }
+  margin: 0;
+}
 
 body,
 html {
   overflow-x: hidden;
-  margin: 0; }
+  margin: 0;
+}
 
 h1 {
   padding: 120px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #FFFFFF;
   font-size: 52px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+}
 
 p {
   line-height: 1.8;
   color: #60AAFF;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 h2 {
   text-align: center;
   font-family: 'Knewave', cursive;
   color: #60AAFF;
-  font-size: 50px; }
+  font-size: 50px;
+}
 
 .bouton-primaire {
   cursor: pointer;
   margin: 55px 15px 15px;
+  -webkit-transition: 0.7s;
   transition: 0.7s;
   background-color: #FFFFFF;
   border: 1px solid #60AAFF;
@@ -42,115 +52,213 @@ h2 {
   width: 300px;
   height: 50px;
   border-radius: 10px;
-  z-index: 1; }
-  .bouton-primaire:hover {
-    background-color: #60AAFF;
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF; }
+  z-index: 1;
+}
+
+.bouton-primaire:hover {
+  background-color: #60AAFF;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
 
 .parallaxParent {
   height: 100vh;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .parallaxParent > * {
   height: 200%;
   position: relative;
-  top: -100%; }
+  top: -100%;
+}
 
 section.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  section.product .desc {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: white; }
-    section.product .desc img {
-      max-height: 100vh;
-      min-width: 520px;
-      width: 50%;
-      object-fit: cover; }
-    section.product .desc .txt {
-      width: 50%;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      section.product .desc .txt p {
-        margin-left: 10%;
-        width: 80%; }
-  section.product .nbr {
-    height: 100vh;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to bottom, rgba(18, 42, 66, 0.85), rgba(18, 42, 66, 0.85)), url("/Images/eolienne4.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-    section.product .nbr .txt {
-      width: 100%;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      section.product .nbr .txt ul {
-        padding: 0;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap; }
-        section.product .nbr .txt ul li {
-          font-family: 'Roboto', sans-serif;
-          font-size: 50px;
-          color: #60AAFF;
-          width: 300px;
-          text-align: center;
-          text-decoration: none; }
-  section.product .carr {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white; }
-    section.product .carr h3 {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      color: #60AAFF;
-      font-size: 40px;
-      font-family: 'Roboto', sans-serif; }
-    section.product .carr .imgs {
-      display: flex;
-      justify-content: center; }
-      section.product .carr .imgs img {
-        height: 330px;
-        margin: 10px;
-        width: 450px; }
-  section.product .achat {
-    background-color: white;
-    display: flex;
-    justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.product .desc {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+section.product .desc img {
+  max-height: 100vh;
+  min-width: 520px;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.product .desc .txt {
+  width: 50%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.product .desc .txt p {
+  margin-left: 10%;
+  width: 80%;
+}
+
+section.product .nbr {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(18, 42, 66, 0.85)), to(rgba(18, 42, 66, 0.85))), url("/Images/eolienne4.jpg");
+  background-image: linear-gradient(to bottom, rgba(18, 42, 66, 0.85), rgba(18, 42, 66, 0.85)), url("/Images/eolienne4.jpg");
+  background-size: cover;
+}
+
+section.product .nbr .txt {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.product .nbr .txt ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.product .nbr .txt ul li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  color: #60AAFF;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+}
+
+section.product .carr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+section.product .carr h3 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #60AAFF;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.product .carr .imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.product .carr .imgs img {
+  height: 330px;
+  margin: 10px;
+  width: 450px;
+}
+
+section.product .achat {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .panel {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+}
 
 @media screen and (max-width: 420px) {
   body,
   html {
-    overflow-y: visible; }
+    overflow-y: visible;
+  }
   section.nuages {
-    display: none; }
-    section.nuages * {
-      display: none; }
+    display: none;
+  }
+  section.nuages * {
+    display: none;
+  }
   section.product {
-    margin-top: 0 !important; }
-    section.product .desc .txt {
-      width: 100%;
-      text-align: center; } }
+    margin-top: 0 !important;
+  }
+  section.product .desc .txt {
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=fiche-produit-style.css.map */

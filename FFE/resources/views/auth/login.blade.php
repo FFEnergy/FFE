@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('style')
+    <link rel="stylesheet" href="./css/CSS/login-style.css">
+@endsection
 
 @section('content')
   <section class="Logincards">

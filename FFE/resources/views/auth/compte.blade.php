@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('style')
+    <link rel="stylesheet" href="./css/CSS/compte-style.css">
+@endsection
 
 @section('content')
   <h2>Account Settings</h2>

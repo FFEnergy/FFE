@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('style')
+    <link rel="stylesheet" href="./css/CSS/AboutUs-style.css">
+@endsection
+
 @section('content')
 <section class="panel miseEnPlace">
   <div class="text">
