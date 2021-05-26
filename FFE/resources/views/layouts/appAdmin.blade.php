@@ -35,9 +35,9 @@
         </p>
         <ul class="menu-list">
           <li>
-            <a class="is-active">Modification des articles</a>
+            <a href="modification">Modification des articles</a>
           </li>
-          <li><a>Modification du contenu</a></li>
+          <li><a href="contact-list">Modification du contenu</a></li>
         </ul>
       </aside>
 

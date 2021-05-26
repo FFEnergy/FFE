@@ -6,6 +6,7 @@ body {
   margin: 0;
   #app{
     display: flex;
+    width: 100%;
 
   }
 }
@@ -16,6 +17,10 @@ html {
   margin: 0;
 }
 
+main{
+  width: 100%;
+  padding: 30px;
+}
 .accordion {
     background-color: #eee;
     color: #444;

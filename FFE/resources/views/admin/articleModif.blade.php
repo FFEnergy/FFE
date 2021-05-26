@@ -11,9 +11,9 @@
                 @csrf
                 <h2>Titre :</h2>
                 <input type="hidden" name="id" value="{{$contenue->id}}">
-                <textarea class="editor form-control" name="titre_content">{{$contenue->titre_content}}</textarea>
+                <textarea class="editor form-control" name="titre_content{{$contenue->id}}">{{$contenue->titre_content}}</textarea>
                 <h2>Descritption :</h2>
-                <textarea class="editor form-control" name="content">{{$contenue->content}}</textarea>
+                <textarea class="editor form-control" name="content{{$contenue->id}}">{{$contenue->content}}</textarea>
                 <button type="submit">Modifier</button>
             </form>
         </div>
