@@ -1,0 +1,42 @@
+@import 'colors';
+@import 'fonts';
+@import 'general';
+
+body {
+  margin: 0;
+  #app{
+    display: flex;
+
+  }
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+
+aside{
+  background-color: $dark-color;
+  padding: 25px;
+  min-width: 250px;
+  .menu-label{
+    color: #60AAFF;
+    a{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100px;
+      }
+    }
+  }
+  .menu-list{
+    a{
+      color: #fff;
+    }
+    .is-active{
+      background-color: $secondary-color;
+    }
+  }
+}

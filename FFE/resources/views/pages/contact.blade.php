@@ -4,23 +4,38 @@
 
 <section class="contactForm">
     <h2>Nous contacter</h2>
-    <form class="contact-form" action="contact.html" method="post">
+    <form class="contact-form" action="{{ route('contact.contact') }}" method="POST" enctype="multipart/form-data">
+        @csrf
         <div class="upper-form">
             <div class="left-form">
                 <label class="hidden" for="firstname">First Name</label>
-                <input type="text" name="firstname" value="" placeholder="First Name">
+                <input type="text" name="firstname" value="{{ old('firstname') }}" placeholder="First Name">
+                @error('firstname')
+                    <p class="help is-danger">{{ $message }}</p>
+                @enderror
                 <label class="hidden" for="email">Email</label>
-                <input type="email" name="email" value="" placeholder="Email">
+                <input type="email" name="email" value="{{ old('email') }}" placeholder="Email">
+                @error('email')
+                    <p class="help is-danger">{{ $message }}</p>
+                @enderror
             </div>
             <div class="right-form">
-                <label class="hidden" for="lastname">Last Name</label>
-                <input type="text" name="lastname" value="" placeholder="Last Name">
-                <label class="hidden" for="Telephone">Télephone</label>
-                <input type="text" name="Telephone" value="" placeholder="Télephone">
+                <label class="hidden" for="name">Last Name</label>
+                <input type="text" name="name" value="{{ old('name') }}" placeholder="Last Name">
+                @error('name')
+                    <p class="help is-danger">{{ $message }}</p>
+                @enderror
+                <label class="hidden" for="telephone">Télephone</label>
+                <input type="text" name="telephone" value="{{ old('telephone') }}" placeholder="Télephone">
+                @error('telephone')
+                    <p class="help is-danger">{{ $message }}</p>
+                @enderror
             </div>
             <label class="hidden" for="message">message</label>
-            <textarea name="message" rows="4" cols="80" placeholder="message"></textarea>
-
+            <textarea name="message" rows="4" cols="80" value="{{ old('message') }}" placeholder="message"></textarea>
+            @error('message')
+                <p class="help is-danger">{{ $message }}</p>
+            @enderror
         </div>
         <button class="bouton-primaire" type="submit" name="Envoyer">Envoyer</button>
         <!-- <a href="#parallax1"><img src="https://sandradasilva.net/wp-content/uploads/2019/03/Pure-CSS-Scroll-Animation-Arrow.gif"></a> -->

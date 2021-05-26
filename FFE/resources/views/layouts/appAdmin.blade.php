@@ -13,7 +13,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
-        <link rel="stylesheet" href="./css/CSS/header.css">
+        <link rel="stylesheet" href="./css/CSS/backoffice-header.css">
+        <link rel="stylesheet" href="./css/CSS/backoffice-contact.css">
         <link rel="stylesheet" href="./css/CSS/articleModif.css">
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
@@ -29,34 +30,14 @@
         <p class="menu-label">
           <a aria-label="page d'acceuil" href="./" id="brand"><img src="images\wind.svg" alt=""></a>
         </p>
-        <ul class="menu-list">
-          <li><a>Dashboard</a></li>
-          <li><a>Customers</a></li>
-        </ul>
         <p class="menu-label">
           Administration
         </p>
         <ul class="menu-list">
-          <li><a>Team Settings</a></li>
           <li>
             <a class="is-active">Modification des articles</a>
-            <ul>
-              <li><a>Members</a></li>
-              <li><a>Plugins</a></li>
-              <li><a>Add a member</a></li>
-            </ul>
           </li>
-          <li><a>Invitations</a></li>
-          <li><a>Cloud Storage Environment Settings</a></li>
-          <li><a>Authentication</a></li>
-        </ul>
-        <p class="menu-label">
-          Transactions
-        </p>
-        <ul class="menu-list">
-          <li><a>Payments</a></li>
-          <li><a>Transfers</a></li>
-          <li><a>Balance</a></li>
+          <li><a>Modification du contenu</a></li>
         </ul>
       </aside>
 
