@@ -4,7 +4,7 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <h2>Reponse demande de contact</h2>
-    <p>{{$request->message}}</p>
+    <h2>Merci de votre message !</h2>
+    <p>Une personne vous répondra bientôt</p>
   </body>
 </html>

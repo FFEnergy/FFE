@@ -1,21 +1,28 @@
 @extends('layouts.appAdmin')
 
-@section('messages')
+@section('content')
   <section>
+    <ul class="contacts">
+      @foreach($messages as $message)
 
-    @foreach($messages as $message)
-
-        <div class="message">
-            <form>
-                <h2>Titre</h2>
-                <textarea class="editor form-control" name="titre-editor{{$message->id}}">{{$message->titre_messages}}</textarea>
-                <h2>Descritption</h2>
-                <textarea class="editor form-control" name="articles-editor{{$message->id}}">{{$message->messages}}</textarea>
+          <li class="contact">
+            <form class="" action="{{ route('contact.resp') }}" method="post">
+              @csrf
+              <ul>
+                <li><h6>Nom : </h6><p>{{$message->firstname}} {{$message->name}}</p></li>
+                <li><h6>Email : </h6><a href="#">{{$message->email}}</a></li>
+                <input type="hidden" name="email" value="{{$message->email}}">
+                <li><h6>Telephone : </h6><p>{{$message->telephone}}</p></li>
+                <li><h6>Message : </h6><p>{{$message->message}}</p></li>
+                <li><h6>Date : </h6><p>{{$message->created_at}}</p></li>
+              </ul>
+              <textarea name="message" rows="5" cols="80"></textarea>
+              <button type="submit" name="button"><i class="fas fa-reply"></i></button>
             </form>
-        </div>
+          </li>
 
-    @endforeach
-
+      @endforeach
+    </ul>
   </section>
 @endsection
 

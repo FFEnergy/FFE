@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
         <link rel="stylesheet" href="./css/CSS/backoffice-header.css">
+        <link rel="stylesheet" href="./css/CSS/backoffice-contact.css">
         <link rel="stylesheet" href="./css/CSS/articleModif.css">
 
     {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> --}}
