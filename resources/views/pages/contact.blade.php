@@ -47,7 +47,7 @@
 </section>
 
 <div id="parallax1" class="parallaxParent">
-    <div></div>
+    <div style="background-image: url('/img/map.png');"></div>
 </div>
 
 <section class="info">

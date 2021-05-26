@@ -14,7 +14,7 @@
             <p>@php echo $content[4]['content']; @endphp</p>
         </div>
     </section>
-    <section class="nbr">
+    <section style="background-image:linear-gradient(to bottom, rgba(18,42, 66, .85), rgba(18,42, 66, .85)),url('/img/eolienne4.jpg')" class="nbr">
         <div class="txt">
             <ul>
                 <li><i class="fas fa-bolt"></i> : 12kw</li>
