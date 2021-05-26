@@ -50,7 +50,7 @@ class DatabaseSeeder extends Seeder
         [
           "class_content" => "desc",
           "page_id" => '3',
-          "content" => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+          "content" => 'Windy c’est une éolienne low-tech, très simple à fabriquer à partir de matériaux de récupération. De plus faible puissance que les éoliennes industrielles elle peut être utilisée pour des applications locales : charger un téléphone, allumer des LED, actionner une petite pompe… Pour de telles applications, quelques watts seulement suffisent.',
           "titre_content" => 'Windy',
         ],
         [
