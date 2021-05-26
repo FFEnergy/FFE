@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+$h1font-color: #FFFFFF;
+$pfont-color: #FFFFFF;
+$h2font-color: #e6f5ff;
+$secondary-color: #60AAFF;
+
+body {
+    margin: 0;
+}
+footer {
+  margin-top: 70px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .barreBlancheFooter {
+        height: 200px;
+        margin-top: 25px;
+        width: 3px;
+        border-radius: 3px;
+        background-color: $secondary-color;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
+        #logoEdenSchoolFooter {
+            width: 250px;
+            height: 125px;
+            margin-top: 65px;
+        }
+        #logoFFEnergyFooter {
+            width: 200px;
+            height: 200px;
+            margin-top: 25px;
+        }
+        ul {
+            width: 200px;
+            li {
+              font-family: 'Roboto', sans-serif;
+                list-style-type: none;
+                padding-top: 25px;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 960px) {
+
+    footer {
+        display: block;
+        width: 100%;
+        .barreBlancheFooter {
+            height: 200px;
+            transform: rotate(90deg);
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

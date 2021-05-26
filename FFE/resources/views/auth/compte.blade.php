@@ -5,14 +5,13 @@
 @endsection
 
 @section('content')
-  <h2>Account Settings</h2>
-  <p>Change your profile and account settings</p>
+  <h2>Change your profile and account settings</h2>
   <section class="settings">
     <div class="parametres">
       <ul>
         <li id="compte" class="section actif"><i class="fas fa-user"></i><span>Compte</span></li>
-        <li id="order" class="section"><i class="fas fa-shopping-cart"></i><span>Commandes</span></li>
-        <li id="comment" class="section"><i class="fas fa-comments"></i><span>Commentaires</span></li>
+        {{-- <li id="order" class="section"><i class="fas fa-shopping-cart"></i><span>Commandes</span></li>
+        <li id="comment" class="section"><i class="fas fa-comments"></i><span>Commentaires</span></li> --}}
       </ul>
     </div>
     <button type="button" name="wrapParams" id="wrapParams"><i class="fas fa-arrow-down"></i></button>
@@ -28,14 +27,6 @@
                 <p class="help is-danger">{{ $message }}</p>
             @enderror
           </div>
-          {{-- <div class="field">
-            <label for="prenom">PRENOM</label>
-            <input type="text" name="prenom" placeholder="">
-          </div>
-          <div class="field">
-            <label for="pseudo">PSEUDO</label>
-            <input type="text" name="pseudo" placeholder="">
-          </div> --}}
           <div class="field">
             <label for="email">EMAIL</label>
             <input type="email" name="email" placeholder="" value="{{ old('email', $user->email) }}">
@@ -43,7 +34,7 @@
                 <p class="help is-danger">{{ $message }}</p>
             @enderror
           </div>
-          <button class="button is-link">Envoyer</button>
+          <button class="bouton-primaire">Envoyer</button>
         </form>
         <div class="draw">
           <img id="wind" src="./Images/wind3.svg" alt="">
@@ -51,7 +42,7 @@
         </div>
       </div>
     </section>
-    <section class="main order">
+    {{-- <section class="main order">
       <h3>Last orders</h3>
       <div class="content">
         <div class="orders">
@@ -142,7 +133,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
   </section>
 @endsection

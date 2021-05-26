@@ -35,7 +35,7 @@
         </div>
     </section>
     <section class="achat">
-        <button type="button" name="EnSavoirPlus" class="bouton-primaire">Acheter</button>
+      <a class="bouton-primaire" href="/contact">Acheter</a>
     </section>
 
 </section>

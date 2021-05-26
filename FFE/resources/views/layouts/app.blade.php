@@ -50,22 +50,17 @@
                                 <a class="" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
-                    @else
-                        <li>
-                            <a href="./compte">
-                                {{ Auth::user()->name }}
-                            </a>
-                        </li>
-                            {{-- <div class="" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                   onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                            </div> --}}
+                      @else
+                          <li>
+                              <a href="./compte">
+                                  {{ Auth::user()->name }}
+                              </a>
+                          </li>
+                      @if(Auth::user()->is_admin == 1)
+                          <li>
+                              <a href="./modification"><i class="far fa-edit"></i></a>
+                          </li>
+                      @endif
                     @endguest
                 </ul>
             </div>
@@ -76,7 +71,55 @@
             @yield('content')
         </main>
 
-
+        <footer>
+            <div>
+                <img id="logoFFEnergyFooter" src=".\Images\wind.svg">
+                <p></p>
+            </div>
+            <div class="barreBlancheFooter"></div>
+            <div>
+                <ul class="divfooter1">
+                  <li><a href="./">Home</a></li>
+                  <li><a href="./about">About</a></li>
+                  <li><a href="./contact">Contactez-nous</a></li>
+                  <li><a href="./fiche-produit">Acheter</a></li>
+                  @guest
+                      <li class="">
+                          <a class="" href="{{ route('login') }}">{{ __('Login') }}</a>
+                      </li>
+                      @if (Route::has('register'))
+                          <li class="">
+                              <a class="" href="{{ route('register') }}">{{ __('Register') }}</a>
+                          </li>
+                      @endif
+                    @else
+                        <li>
+                            <a href="./compte">
+                                {{ Auth::user()->name }}
+                            </a>
+                        </li>
+                    @if(Auth::user()->is_admin == 1)
+                        <li>
+                            <a href="./modification"><i class="far fa-edit"></i></a>
+                        </li>
+                    @endif
+                  @endguest
+                </ul>
+            </div>
+            <div class="barreBlancheFooter"></div>
+            <div>
+                <ul class="divfooter2">
+                    <li>Politique De Confidentialité</li>
+                    <li>Media Kit</li>
+                    <li>Mention Légales</li>
+                    <li>Condition Générales De Vente</li>
+                </ul>
+            </div>
+            <div class="barreBlancheFooter"></div>
+            <div>
+                <img id="logoEdenSchoolFooter" src="./Images/EDEN_HORI_VERT-300x136.png">
+            </div>
+        </footer>
     </div>
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -98,5 +141,6 @@
     <script src="JS/AboutUs.js" charset="utf-8"></script>
     <script src="JS/contact.js" charset="utf-8"></script>
     <script src="JS/compte.js" charset="utf-8"></script>
+    <script src="JS/modification.js" charset="utf-8"></script>
 </body>
 </html>

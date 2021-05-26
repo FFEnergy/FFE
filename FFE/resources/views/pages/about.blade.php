@@ -10,7 +10,6 @@
     <div class="paragraphe">
       <h3>@php echo $content[3]['titre_content']; @endphp</h3>
       <p>@php echo $content[3]['content']; @endphp</p>
-
     </div>
   </div>
 </section>
@@ -21,20 +20,17 @@
 </section>
 
 
-<section class="panel SectionNotreEquipe">
-<h2>Notre equipe</h2>
+<section class="SectionNotreEquipe">
 
 <div class="team">
-  <div data-aos="fade-up" data-aos-delay="500" class="people">
+  <div data-aos="fade-up" data-aos-delay="200" class="people">
     <img alt="photo de Florent" id="Florent" src="./images/Florent Martinez.JPG">
     <h3>Florent</h3>
   </div>
-  <div data-aos="fade-up" data-aos-delay="1000" class="people">
+  <div data-aos="fade-up" data-aos-delay="500" class="people">
     <h3>Florian</h3>
     <img alt="photo de Florian" id="Florian" src="./images/Florian Dupin.JPG">
   </div>
 </div>
 
-
-</section>
 @endsection

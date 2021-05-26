@@ -161,6 +161,11 @@ section.product{
     background-color: white;
     display: flex;
     justify-content: center;
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   img{
