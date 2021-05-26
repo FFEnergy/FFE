@@ -28,8 +28,8 @@
                       @php echo $content[0]['content']; @endphp
                     </p>
                     <div id="trigerBird" class="boutons-eolienne">
-                        <button type="button" name="EnSavoirPlus" class="bouton-primaire">En savoir plus</button>
-                        <button type="button" name="EnSavoirPlus" class="bouton-primaire">Acheter</button>
+                      <a class="bouton-primaire" href="/fiche-produit">En savoir plus</a>
+                      <a class="bouton-primaire" href="/contact">Acheter</a>
                     </div>
                 </div>
             </div>
@@ -38,18 +38,6 @@
         <section class="Pourquoi">
             <h2>@php echo $content[1]['titre_content']; @endphp</h2>
             <div class="text">
-                {{-- <div data-aos="fade-right" data-aos-anchor-placement="top-center" class="paragraphe">
-                    <div class="img">
-                        <img class="nuageTxt" src="images\nuage3.svg" alt="">
-                        <img class="nuageTxt" src="images\nuage2.svg" alt="">
-                    </div>
-                    <p>
-                      @php echo $content[1]['content']; @endphp
-                    </p>
-                    <div class="img">
-                        <img class="nuageTxt" src="images\nuage1.svg" alt="">
-                    </div>
-                </div> --}}
                 <div class="paragraphe">
                     <div class="img">
                     </div>
@@ -74,18 +62,6 @@
                     <div class="img">
                     </div>
                 </div>
-                <!-- <div data-aos="flip-up" data-aos-offset="300" class="paragraphe">
-                  <div class="img">
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas nec
-                    ipsum dignissim commodo. Pellentesque lacinia sagittis sapien at consectetur.
-                    Maecenas at egestas urna. Vestibulum bibendum ultricies ex, id consectetur
-                    libero pharetra in. Proin molestie sem
-                  </p>
-                  <div class="img">
-                  </div>
-                </div> -->
             </div>
         </section>
         <section class="Dessin">

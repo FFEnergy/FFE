@@ -18,6 +18,29 @@ img {
   display: none !important;
 }
 
+h2{
+  margin-top: 90px;
+}
+
+.bouton-primaire {
+  cursor: pointer;
+  transition: 0.7s;
+  background-color: #FFFFFF;
+  border: 1px solid $secondary-color;
+  color: $secondary-color;
+  font-size: 15px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $secondary-color;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+  }
+  z-index: 1;
+}
+
 .settings {
   background-color: white;
   width: 100%;
@@ -139,13 +162,12 @@ img {
 
     .fields {
       display: flex;
-      justify-content: space-around;
       flex-direction: column;
       width: 300px;
       height: 55vh;
 
       .field {
-        margin: 0;
+        margin: 15px 0;
         width: 300px;
         display: flex;
         flex-direction: column;
@@ -157,9 +179,7 @@ img {
         }
 
         input {
-          padding: 5px;
-          border: 2px solid #e8e9ee;
-          border-radius: 5px;
+          padding: 10px;
         }
       }
     }

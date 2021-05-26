@@ -198,6 +198,11 @@ section.index {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
   // NOTE: section du pourquoi l'eolienne
@@ -406,8 +411,8 @@ section.index {
   // NOTE: section du dessin
   section.Dessin {
     display: flex;
-    height: 600px;
-    margin-top: 750px;
+    height: 700px;
+    margin-top: 550px;
 
     .plaine-petit {
       display: flex;

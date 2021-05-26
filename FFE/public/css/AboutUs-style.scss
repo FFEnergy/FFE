@@ -116,8 +116,10 @@ section.miseEnPlace{
 }
 
 .SectionNotreEquipe {
+  position: relative;
   width: 100%;
   background-color: white;
+  height: 100vh;
   h2{
     width: 100%;
     text-align: center;

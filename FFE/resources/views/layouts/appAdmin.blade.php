@@ -37,7 +37,7 @@
           <li>
             <a href="modification">Modification des articles</a>
           </li>
-          <li><a href="contact-list">Modification du contenu</a></li>
+          <li><a href="contact-list">Demandes de contacts</a></li>
         </ul>
       </aside>
 

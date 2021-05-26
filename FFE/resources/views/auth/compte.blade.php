@@ -2,8 +2,7 @@
 
 
 @section('content')
-  <h2>Account Settings</h2>
-  <p>Change your profile and account settings</p>
+  <h2>Change your profile and account settings</h2>
   <section class="settings">
     <div class="parametres">
       <ul>
@@ -25,14 +24,6 @@
                 <p class="help is-danger">{{ $message }}</p>
             @enderror
           </div>
-          {{-- <div class="field">
-            <label for="prenom">PRENOM</label>
-            <input type="text" name="prenom" placeholder="">
-          </div>
-          <div class="field">
-            <label for="pseudo">PSEUDO</label>
-            <input type="text" name="pseudo" placeholder="">
-          </div> --}}
           <div class="field">
             <label for="email">EMAIL</label>
             <input type="email" name="email" placeholder="" value="{{ old('email', $user->email) }}">
@@ -40,7 +31,7 @@
                 <p class="help is-danger">{{ $message }}</p>
             @enderror
           </div>
-          <button class="button is-link">Envoyer</button>
+          <button class="bouton-primaire">Envoyer</button>
         </form>
         <div class="draw">
           <img id="wind" src="./Images/wind3.svg" alt="">

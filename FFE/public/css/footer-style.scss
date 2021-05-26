@@ -11,7 +11,8 @@ body {
     margin: 0;
 }
 footer {
-    background-color: $secondary-color;
+  margin-top: 70px;
+    background-color: #FFF;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -20,7 +21,7 @@ footer {
         margin-top: 25px;
         width: 3px;
         border-radius: 3px;
-        background-color: white;
+        background-color: $secondary-color;
     }
     div {
         display: flex;
@@ -42,7 +43,7 @@ footer {
               font-family: 'Roboto', sans-serif;
                 list-style-type: none;
                 padding-top: 25px;
-                color: white;
+                color: $secondary-color;
             }
         }
     }
