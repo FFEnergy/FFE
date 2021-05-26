@@ -8,7 +8,7 @@
 
 <section class="product">
     <section class="desc">
-        <img data-aos="fade-right" alt="image de l'éolienne" src="./Images/eolienne5.jpg">
+        <img data-aos="fade-right" alt="image de l'éolienne" src="./img/eolienne5.jpg">
         <div class="txt">
             <h2>@php echo $content[4]['titre_content']; @endphp</h2>
             <p>@php echo $content[4]['content']; @endphp</p>
@@ -30,8 +30,8 @@
         </h3>
         <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
         <div class="imgs">
-            <img data-aos="fade-right" alt="image de l'éolienne" src="./Images/eolienne6.jpg">
-            <img data-aos="fade-left" alt="image de l'éolienne" src="./Images/eolienne3.jpg">
+            <img data-aos="fade-right" alt="image de l'éolienne" src="./img/eolienne6.jpg">
+            <img data-aos="fade-left" alt="image de l'éolienne" src="./img/eolienne3.jpg">
         </div>
     </section>
     <section class="achat">

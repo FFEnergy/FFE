@@ -6,7 +6,7 @@
     <meta name="description" content="Page d'acceuil, l'éolienne 100% recyclé">
     <title>FFEnergy</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images\wind3.svg">
+    <link rel="icon" type="image/png" href="img\wind3.svg">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
@@ -31,7 +31,7 @@
     <div id="app">
         <nav>
             <div class="container">
-                <a aria-label="page d'acceuil" href="./" id="brand"><img src="images\wind.svg" alt=""><span>FFE, l'éolienne 100% recyclé</span></a>
+                <a aria-label="page d'acceuil" href="./" id="brand"><img src="img\wind.svg" alt=""><span>FFE, l'éolienne 100% recyclé</span></a>
                 <button class="burger">
                     <span class="rotate"></span>
                     <span class="rotate"></span>
@@ -74,7 +74,7 @@
 
         <footer>
             <div>
-                <img id="logoFFEnergyFooter" src=".\Images\wind.svg">
+                <img id="logoFFEnergyFooter" src=".\img\wind.svg">
                 <p></p>
             </div>
             <div class="barreBlancheFooter"></div>
@@ -118,7 +118,7 @@
             </div>
             <div class="barreBlancheFooter"></div>
             <div>
-                <img id="logoEdenSchoolFooter" src="./Images/EDEN_HORI_VERT-300x136.png">
+                <img id="logoEdenSchoolFooter" src="./img/EDEN_HORI_VERT-300x136.png">
             </div>
         </footer>
     </div>

@@ -24,12 +24,12 @@
 <h2>La team</h2>
 <div class="team">
   <div data-aos="fade-up" data-aos-delay="200" class="people">
-    <img alt="photo de Florent" id="Florent" src="./images/Florent Martinez.JPG">
+    <img alt="photo de Florent" id="Florent" src="./img/Florent Martinez.JPG">
     <h3>Florent</h3>
   </div>
   <div data-aos="fade-up" data-aos-delay="500" class="people">
     <h3>Florian</h3>
-    <img alt="photo de Florian" id="Florian" src="./images/Florian Dupin.JPG">
+    <img alt="photo de Florian" id="Florian" src="./img/Florian Dupin.JPG">
   </div>
 </div>
 

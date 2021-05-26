@@ -7,13 +7,13 @@
     <section class="index">
         <h1 class="t1">FFEnergy</h1>
         <section class="nuages">
-            <img class="nuage" src="./images/nuage1.svg" alt="">
-            <img class="nuage" src="./images/nuage2.svg" alt="">
-            <img class="nuage" src="./images/nuage3.svg" alt="">
+            <img class="nuage" src="./img/nuage1.svg" alt="">
+            <img class="nuage" src="./img/nuage2.svg" alt="">
+            <img class="nuage" src="./img/nuage3.svg" alt="">
         </section>
         <section class="Eolienne animationtropstyle">
-            <img src="images\wind.svg" alt="">
-            <img class"moncul" src="images\nuage4.svg" alt="">
+            <img src="img\wind.svg" alt="">
+            <img class"moncul" src="img\nuage4.svg" alt="">
         </section>
         <section class="Windy">
             <div class="text">
@@ -21,9 +21,9 @@
                 // dd($content);
               @endphp
                 <div class="oiseaux">
-                    <img data-aos="fade-up-left" data-aos-anchor-placement="top-center" class="oiseau" src="images\oiseau.png" alt="">
-                    <img data-aos="fade-right" data-aos-anchor-placement="top-center" class="oiseau" src="images\oiseau.png" alt="">
-                    <img data-aos="fade-down-right" data-aos-anchor-placement="top-center" class="oiseau" src="images\oiseau.png" alt="">
+                    <img data-aos="fade-up-left" data-aos-anchor-placement="top-center" class="oiseau" src="img\oiseau.png" alt="">
+                    <img data-aos="fade-right" data-aos-anchor-placement="top-center" class="oiseau" src="img\oiseau.png" alt="">
+                    <img data-aos="fade-down-right" data-aos-anchor-placement="top-center" class="oiseau" src="img\oiseau.png" alt="">
                 </div>
                 <div class="paragraphe">
                     <h3>@php echo $content[0]['titre_content']; @endphp</h3>
@@ -69,15 +69,15 @@
         </section>
         <section class="Dessin">
             <div class="plaine-petit">
-                <img src="images/montagne.png" alt="">
-                <img src="images/arbre1.png" alt="">
+                <img src="img/montagne.png" alt="">
+                <img src="img/arbre1.png" alt="">
             </div>
             <div class="plaine-grand">
-                <img src="images\wind3.svg" alt="">
-                <img src="images/arbre1.png" alt="">
-                <img src="images/arbre2.png" alt="">
-                <img src="images/arbre3.png" alt="">
-                <img src="images\bush.svg" alt="">
+                <img src="img\wind3.svg" alt="">
+                <img src="img/arbre1.png" alt="">
+                <img src="img/arbre2.png" alt="">
+                <img src="img/arbre3.png" alt="">
+                <img src="img\bush.svg" alt="">
 
             </div>
         </section>

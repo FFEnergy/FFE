@@ -28,7 +28,7 @@
     <div id="app">
       <aside class="menu">
         <p class="menu-label">
-          <a aria-label="page d'acceuil" href="./" id="brand"><img src="images\wind.svg" alt=""></a>
+          <a aria-label="page d'acceuil" href="./" id="brand"><img src="img\wind.svg" alt=""></a>
         </p>
         <p class="menu-label">
           Administration
