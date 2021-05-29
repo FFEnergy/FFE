@@ -15,30 +15,30 @@
                 <label class="hidden" for="firstname">First Name</label>
                 <input type="text" name="firstname" value="{{ old('firstname') }}" placeholder="First Name">
                 @error('firstname')
-                    <p class="help is-danger">{{ $message }}</p>
+                  <p class="error">{{ $message }}</p>
                 @enderror
                 <label class="hidden" for="email">Email</label>
                 <input type="email" name="email" value="{{ old('email') }}" placeholder="Email">
                 @error('email')
-                    <p class="help is-danger">{{ $message }}</p>
+                  <p class="error">{{ $message }}</p>
                 @enderror
             </div>
             <div class="right-form">
                 <label class="hidden" for="name">Last Name</label>
                 <input type="text" name="name" value="{{ old('name') }}" placeholder="Last Name">
                 @error('name')
-                    <p class="help is-danger">{{ $message }}</p>
+                  <p class="error">{{ $message }}</p>
                 @enderror
                 <label class="hidden" for="telephone">Télephone</label>
                 <input type="text" name="telephone" value="{{ old('telephone') }}" placeholder="Télephone">
                 @error('telephone')
-                    <p class="help is-danger">{{ $message }}</p>
+                  <p class="error">{{ $message }}</p>
                 @enderror
             </div>
             <label class="hidden" for="message">message</label>
             <textarea name="message" rows="4" cols="80" value="{{ old('message') }}" placeholder="message"></textarea>
             @error('message')
-                <p class="help is-danger">{{ $message }}</p>
+              <p class="error">{{ $message }}</p>
             @enderror
         </div>
         <button class="bouton-primaire" type="submit" name="Envoyer">Envoyer</button>

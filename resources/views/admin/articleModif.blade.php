@@ -10,10 +10,16 @@
             <form method="POST" action="/requeteModifier">
                 @csrf
                 <h2>Titre :</h2>
+                @error('titre_content')
+                    <p class="error">{{ $message }}</p>
+                @enderror
                 <input type="hidden" name="id" value="{{$contenue->id}}">
-                <textarea class="editor form-control" name="titre_content{{$contenue->id}}">{{$contenue->titre_content}}</textarea>
+                <textarea class="editor form-control" id="titre_content{{$contenue->id}}" name="titre_content">{{$contenue->titre_content}}</textarea>
                 <h2>Descritption :</h2>
-                <textarea class="editor form-control" name="content{{$contenue->id}}">{{$contenue->content}}</textarea>
+                @error('content')
+                    <p class="error">{{ $message }}</p>
+                @enderror
+                <textarea class="editor form-control" id="content{{$contenue->id}}" name="content">{{$contenue->content}}</textarea>
                 <button type="submit">Modifier</button>
             </form>
         </div>
@@ -27,7 +33,7 @@
   <script>
     $(function(){
         $('.editor').each(function(e){
-            CKEDITOR.replace( this.name, {
+            CKEDITOR.replace( this.id, {
               enterMode: CKEDITOR.ENTER_BR
             });
         });
