@@ -14,12 +14,18 @@
                     <p class="error">{{ $message }}</p>
                 @enderror
                 <input type="hidden" name="id" value="{{$contenue->id}}">
+<<<<<<< Updated upstream:resources/views/admin/articleModif.blade.php
                 <textarea class="editor form-control" id="titre_content{{$contenue->id}}" name="titre_content">{{$contenue->titre_content}}</textarea>
                 <h2>Descritption :</h2>
                 @error('content')
                     <p class="error">{{ $message }}</p>
                 @enderror
                 <textarea class="editor form-control" id="content{{$contenue->id}}" name="content">{{$contenue->content}}</textarea>
+=======
+                <textarea class="editor form-control" name="titre_content">{{$contenue->titre_content}}</textarea>
+                <h2>Descritption :</h2>
+                <textarea class="editor form-control" name="content">{{$contenue->content}}</textarea>
+>>>>>>> Stashed changes:FFE/resources/views/admin/articleModif.blade.php
                 <button type="submit">Modifier</button>
             </form>
         </div>
