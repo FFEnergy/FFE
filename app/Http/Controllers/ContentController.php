@@ -10,7 +10,7 @@ class ContentController extends Controller
 {
     public function index()
     {
-        $content = Contents::with("pages")->get();
+        $content = Contents::with("pages")->orderBy('id', 'ASC')->get();
         return view('admin.articleModif', compact('content'));
     }
 

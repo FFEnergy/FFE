@@ -9,7 +9,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-       $content = Contents::all();
+       $content = Contents::orderBy('id', 'ASC')->get();
        return view('pages.index', compact('content'));
     }
 }
