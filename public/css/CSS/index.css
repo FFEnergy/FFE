@@ -72,7 +72,6 @@ p {
 
 section.index {
   margin: 100px 0 0 0;
-  border-radius: 20px;
   background-color: #60AAFF; }
   section.index section.nuages img {
     position: absolute;
@@ -264,14 +263,14 @@ section.index {
           color: #60AAFF; }
   section.index section.Dessin {
     display: flex;
-    height: 700px;
+    height: 450px;
     margin-top: 550px; }
     section.index section.Dessin .plaine-petit {
       display: flex;
       position: absolute;
       width: 800px;
       min-width: 50%;
-      height: 700px;
+      height: 450px;
       border-radius: 50% 50% 0 0;
       background-color: #00B94A;
       left: -10%;
@@ -291,7 +290,7 @@ section.index {
       position: absolute;
       width: 1100px;
       min-width: 80%;
-      height: 700px;
+      height: 450px;
       border-radius: 50% 0% 0 0;
       background-color: #00D957;
       right: 0%; }
