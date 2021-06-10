@@ -13,7 +13,7 @@
         </section>
         <section class="Eolienne animationtropstyle">
             <img src="img\wind.svg" alt="">
-            <img class"moncul" src="img\nuage4.svg" alt="">
+            <img class="moncul" src="img\nuage4.svg" alt="">
         </section>
         <section class="Windy">
             <div class="text">
