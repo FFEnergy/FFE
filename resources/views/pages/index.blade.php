@@ -5,7 +5,7 @@
 
 @section('content')
     <section class="index">
-        <h1 class="t1">FFEnergy</h1>
+        <h1 class="t1">FFEnergy l'éolienne pour les plus démunies</h1>
         <section class="nuages">
             <img class="nuage" src="./img/nuage1.svg" alt="">
             <img class="nuage" src="./img/nuage2.svg" alt="">
@@ -31,8 +31,8 @@
                       @php echo $content[0]['content']; @endphp
                     </p>
                     <div id="trigerBird" class="boutons-eolienne">
-                      <a class="bouton-primaire" href="/fiche-produit">En savoir plus</a>
-                      <a class="bouton-primaire" href="/contact">Acheter</a>
+                      <a class="bouton-primaire" href="/about">En savoir plus sur notre équipe</a>
+                      <a class="bouton-primaire" href="/fiche-produit">Découvrir notre éolienne</a>
                     </div>
                 </div>
             </div>

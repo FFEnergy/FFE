@@ -41,7 +41,7 @@
                     <li><a href="./">Home</a></li>
                     <li><a href="./about">About</a></li>
                     <li><a href="./contact">Contactez-nous</a></li>
-                    <li><a href="./fiche-produit">Acheter</a></li>
+                    <li><a href="./fiche-produit">Découvrir notre éolienne</a></li>
                     @guest
                         <li class="">
                             <a class="" href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -83,7 +83,7 @@
                   <li><a href="./">Home</a></li>
                   <li><a href="./about">About</a></li>
                   <li><a href="./contact">Contactez-nous</a></li>
-                  <li><a href="./fiche-produit">Acheter</a></li>
+                  <li><a href="./fiche-produit">Découvrir notre éolienne</a></li>
                   @guest
                       <li class="">
                           <a class="" href="{{ route('login') }}">{{ __('Login') }}</a>

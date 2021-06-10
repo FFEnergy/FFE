@@ -34,8 +34,10 @@
             <img data-aos="fade-left" alt="image de l'éolienne" src="./img/eolienne3.jpg">
         </div>
     </section>
+    <p class="achat">Pour avoir une éolienne contactez nous ci-dessous</p>
     <section class="achat">
-      <a class="bouton-primaire" href="/contact">Acheter</a>
+
+      <a class="bouton-primaire" href="/contact">Nous contacter</a>
     </section>
 
 </section>
