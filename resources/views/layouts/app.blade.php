@@ -31,7 +31,7 @@
     <div id="app">
         <nav>
             <div class="container">
-                <a aria-label="page d'acceuil" href="./" id="brand"><img src="img\wind.svg" alt=""><span>FFE, l'éolienne 100% recyclé</span></a>
+                <a aria-label="page d'acceuil" href="./" id="brand"><img src="img\wind.svg" alt=""><span>FFEnergy</span></a>
                 <button class="burger">
                     <span class="rotate"></span>
                     <span class="rotate"></span>
