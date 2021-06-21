@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
         [
           "class_content" => "miseEnPlace",
           "page_id" => '2',
-          "content" => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas nec ipsum dignissim commodo. Pellentesque lacinia sagittis sapien at consectetur. Maecenas at egestas urna. Vestibulum bibendum ultricies ex, id consectetur libero pharetra in. Proin molestie ses ;Duis feugiat in purus et mattis. Proin nisl risus, eleifend sit amet nisl eu, tincidunt tristique lorem. Nam leo nibh, viverra ut consectetur fringilla , dictum eget diam. Phasellus enim quam, semper in viverra porttitor, semper quis leo. Integer et ultricies libero. Duis a turpis id lectus facilisis interdum.',
+          "content" => 'Cette éolienne est un projet de fin d'année en groupe de deux, nous avions l’objectif de créer une éolienne recyclée et de l'accompagner avec un site web. Pour réaliser ce projet nous avons commencé par la conception du site. Nous avons tout d’abord commencé par identifier nos cibles. Nous avons ensuite pu créer les wireframe puis les maquettes avec leurs specs fonctionnelles. Pour le développement nous avons commencé par créer des tâches et à nous les répartir, grâce à ça le développement s\'est fait rapidement et de façon organisé.',
           "titre_content" => 'FFE',
         ],
         [
