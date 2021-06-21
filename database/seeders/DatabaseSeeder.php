@@ -38,7 +38,7 @@ class DatabaseSeeder extends Seeder
         [
           "class_content" => 'Moyen',
           "page_id" => '1',
-          "content" => 'Pour aider les personnes en manque d\'électricité nous avons créé cette éolienne et ce site web. Il nous permet de partager notre action pour que vous aussi puissiez aider soit en nous faisant un don ou en achetant une éolienne pour vous. Cet argent servira à la création et à l\'envoi de cette éolienne. Vous pouvez aussi creer votre éolienne maison que nous nous chargeront d\'envoyer dans des zones à besoins.',
+          "content" => 'Pour aider les personnes en manque d\'électricité nous avons créé cette éolienne et ce site web. Il nous permet de partager notre action pour que vous aussi puissiez nous aider soit en nous faisant un don ou en achetant une éolienne pour vous. Cet argent servira à la création et à l\'envoi de cette éolienne. Vous pouvez aussi créer votre éolienne maison que nous nous chargerons d\'envoyer dans des zones à besoins.',
           "titre_content" => 'Des moyens mis en place',
         ],
         [
